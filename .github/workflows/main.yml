@@ -36,7 +36,7 @@ jobs:
           cmd: install # install npm or install yarn
         # Creating Build Production
       - name: Creating Build
-        run: npm run build  
+        run: yarn build  
         # Setup surge Environment
       - name: installing surge
         run: npm install -g surge
