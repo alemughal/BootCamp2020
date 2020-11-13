@@ -6,7 +6,7 @@ import Student from './student'
 function App () {
   return (
     <div>
-      <Student name="Ali" roll="1520" course="Bootcamp" city="Islamabad" />
+      <Student name="Ali" roll="1520" course="Bootcamp2020" city="Islamabad" />
     </div>
   )
 }
