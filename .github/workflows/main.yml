@@ -42,7 +42,7 @@ jobs:
         run: npm install -g surge
         # Delpoying on surge 
       - name: deploying on surge
-        run: surge ./build https://bootcampzozo_second.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build https://bootcampzozo_class3.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
  
 
       # Runs a set of commands using the runners shell
