@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import React, { Fragment, useState } from 'react';
+import Message from './Message';
 import './App.css';
 
-function App() {
+
+function App () {
+  let [count, setCount] = useState(0)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <Message value= {count}/>
+      <br/>
+      <button onClick={ () => setCount (++count) } className="up">Increment</button>
+      <button onClick={ () => setCount (--count) } className="down">Decrement</button>
+      <button className="update" >Update</button>
     </div>
-  );
+  )
 }
 
 export default App;
