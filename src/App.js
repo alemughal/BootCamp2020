@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Parent from './Parent';
 import './App.css';
+import countercontext from './countercontext';
 
 function App() {
+  const counterState = useState(0)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <countercontext.Provider value={counterState}>
+      <div>
+        <Parent />
+      </div>
+    </countercontext.Provider>
+  )
 }
 
 export default App;
