@@ -1,17 +1,26 @@
-function check () {
-    return new Promise ((resolve, reject) =>{
-        setTimeout(function () {
-            resolve("Resolve")
-            reject("Reject")
-        }, 2000)
+function api() {
+    return new Promise((resolve, reject) => {
+        let data = fetch('https://jsonplaceholder.typicode.com/todos/3')
+        resolve(data)
+        reject("Data not getting")
     })
 }
-check()
 
-.then(data => {
-    console.log(data)
-})
-.catch(err=> {
-    console.log(err)
-})
+api()
+    .then((data) => {
+        return data.json()
+    })
+    .then((people) => {
+        console.log(people)
+    })
+    .catch((error) => {
+        console.log(error)
+    })
 
+
+
+async function newFunction() {
+   await console.log(Promise.resolve("Hello World"))
+}
+
+newFunction()
