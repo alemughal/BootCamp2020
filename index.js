@@ -1,3 +1,31 @@
+// Callbacks Functions
+
+function myFirst() {
+    myDisplayer("Hello");
+}
+
+function mySecond() {
+    myDisplayer("Goodbye");
+}
+
+myFirst();
+mySecond();
+
+
+// Asynchronous Javascript
+
+function asynchronous() {
+    setTimeout(function () { myFunction("I love You !!!"); }, 3000);
+
+    function myFunction(value) {
+        document.getElementById("demo").innerHTML = value;
+    }
+}
+
+asynchronous()
+
+// Promise (then, catch)
+
 function api() {
     return new Promise((resolve, reject) => {
         let data = fetch('https://jsonplaceholder.typicode.com/todos/3')
@@ -17,10 +45,10 @@ api()
         console.log(error)
     })
 
-
+// Async, Await
 
 async function newFunction() {
-   await console.log(Promise.resolve("Hello World"))
+    await console.log(Promise.resolve("Hello World"))
 }
 
 newFunction()
