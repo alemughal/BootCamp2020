@@ -1,6 +1,8 @@
 Deployed URL:
 http://gitrepositories.surge.sh/
 
+Thankx.
+
 
 # Getting Started with Create React App
 
