@@ -1,10 +1,12 @@
 import './App.css';
-import Async from './async';
+import NavBar from './NavBar';
+import LogIn from './Login';
 
 function App() {
   return (
     <div>
-      <Async />
+      <NavBar />
+      <LogIn />
     </div>
   );
 }
