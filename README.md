@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `LIVE SITE` https://bootcamp-session4.surge.sh/
+### `LIVE SITE` http://unbecoming-volleyball.surge.sh/
 
 ### `npm start`
 
