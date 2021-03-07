@@ -1,0 +1,8 @@
+{
+    "npm.enableRunFromFolder": true,
+    "markdown.preview.fontSize": 18,
+    "editor.inlineHints.fontSize": 2,
+    "editor.fontSize": 18,
+    "editor.formatOnType": true,
+    "screencastMode.fontSize": 60
+}
